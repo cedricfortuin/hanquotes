@@ -1,37 +1,33 @@
+<template>
+  <Transition name="fade" mode="out-in">
+    <h2 class="text-gray-200 text-2xl">{{ quote }}</h2>
+  </Transition>
+  <small class="text-gray-200">Quote {{ currentQuoteIndex + 1 }} out of {{ amountQuotes }}.</small>
+</template>
+
 <script setup>
-import { ref } from 'vue';
+import {ref} from 'vue';
 import quotes from "../../quotes.json";
 
-const amountQuotes = quotes['quotes'].length;
-const randomIndex = ref(Math.floor(Math.random() * amountQuotes));
-const quote = ref(quotes['quotes'][randomIndex.value]);
+const amountQuotes = ref(quotes.quotes.length);
+const currentQuoteIndex = ref(Math.floor(Math.random() * amountQuotes.value));
+const quote = ref(quotes.quotes[currentQuoteIndex.value]);
+
+const show = ref(true);
 
 setInterval(() => {
-  randomIndex.value = Math.floor(Math.random() * amountQuotes);
-  quote.value = quotes['quotes'][randomIndex.value];
+  show.value = false;
+  currentQuoteIndex.value = Math.floor(Math.random() * amountQuotes.value);
+  quote.value = quotes.quotes[currentQuoteIndex.value];
+  show.value = true;
 }, 5000);
 </script>
 
-<template>
-  <h2>{{ quote }}</h2>
-  <small>Quote {{ randomIndex + 1 }} out of {{ amountQuotes }} quotes.</small>
-</template>
-
-<style scoped>
-h2 {
-  text-align: center
+<style>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
 }
-
-
-@media (min-width: 1024px) {
-  h2 {
-    text-align: left;
-  }
-}
-
-@media (max-width: 1023px) {
-  small {
-    display: none;
-  }
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
 </style>

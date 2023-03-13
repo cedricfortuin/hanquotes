@@ -1,36 +1,18 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue';
+import HelloRick from './components/HelloRick.vue';
 import RandomQuote from "@/components/RandomQuote.vue";
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
-      <HelloWorld msg="Quotes van Rick"/>
+  <div>
+    <div class="grid grid-cols-2 mt-64">
+      <div class="col-span-2 md:col-span-1 py-4 text-center">
+        <HelloRick msg="Quotes van Rick"/>
+      </div>
+
+      <div class="col-span-2 md:col-span-1 py-4 text-center md:text-left">
+        <RandomQuote/>
+      </div>
     </div>
-  </header>
-
-  <main>
-    <RandomQuote/>
-  </main>
+  </div>
 </template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
