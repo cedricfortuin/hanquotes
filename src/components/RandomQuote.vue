@@ -1,8 +1,9 @@
 <template>
   <Transition name="fade" mode="out-in">
-    <h2 class="text-gray-200 text-2xl">{{ quote }}</h2>
+    <i class="text-gray-200 text-2xl">"{{ quote }}"</i>
   </Transition>
-  <small class="text-gray-200">Quote {{ currentQuoteIndex + 1 }} out of {{ amountQuotes }}.</small>
+  <br/>
+  <small class="text-gray-200">Quote {{ currentQuoteIndex + 1 }} out of {{ amountQuotes }}</small>
 </template>
 
 <script setup>
@@ -20,7 +21,7 @@ setInterval(() => {
   currentQuoteIndex.value = Math.floor(Math.random() * amountQuotes.value);
   quote.value = quotes.quotes[currentQuoteIndex.value];
   show.value = true;
-}, 5000);
+}, 4500);
 </script>
 
 <style scoped>
