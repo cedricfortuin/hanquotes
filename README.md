@@ -1,29 +1,9 @@
-# rickquotez
+# Quotez van Rick
+Hoi, welkom bij de quotes van Rick, de multifunctionele docent.
 
-This template should help get you started developing with Vue 3 in Vite.
+Heb je een nieuwe quote? \
+Voeg hem toe aan de lijst in `quotes.json` en maak een pull request.
+Dan gaan wij hem bekijken en waarschijnlijk toevoegen.
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+&copy; 2023 - Cedric Fortuin
+Dit is een geintje Rick, we houden van je.

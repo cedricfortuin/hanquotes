@@ -5,7 +5,7 @@ import RandomQuote from "@/components/RandomQuote.vue";
 
 <template>
   <div>
-    <div class="grid grid-cols-2 mt-64">
+    <div class="grid grid-cols-2 mt-64 px-4 md:px-0">
       <div class="col-span-2 md:col-span-1 py-4 text-center">
         <HelloRick msg="Quotes van Rick"/>
       </div>

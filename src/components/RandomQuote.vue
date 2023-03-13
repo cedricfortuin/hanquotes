@@ -23,7 +23,7 @@ setInterval(() => {
 }, 5000);
 </script>
 
-<style>
+<style scoped>
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
 }
