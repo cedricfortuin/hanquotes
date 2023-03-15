@@ -5,25 +5,32 @@
   <br/>
   <small class="text-gray-200">Quote {{ currentQuoteIndex + 1 }} van de {{ amountQuotes }} | <a
       href="https://github.com/cedricfortuin/hanquotes" target="_blank" class="hover:text-green-500">Nieuwe
-    toevoegen</a></small>
+    toevoegen</a> | <a :href="'whatsapp://send?text=' + quote" data-action="share/whatsapp/share" target="_blank"
+                       class="hover:text-green-500">Deze quote delen</a></small>
 </template>
 
 <script setup>
 import {ref} from 'vue';
-import quotes from "../../quotes.json";
+import quotes from '../../quotes.json';
 
 const amountQuotes = ref(quotes.quotes.length);
 const currentQuoteIndex = ref(Math.floor(Math.random() * amountQuotes.value));
 const quote = ref(quotes.quotes[currentQuoteIndex.value]);
+const lastQuoteIndex = ref(currentQuoteIndex.value);
 
 const show = ref(true);
 
 setInterval(() => {
   show.value = false;
-  currentQuoteIndex.value = Math.floor(Math.random() * amountQuotes.value);
+  let newQuoteIndex = Math.floor(Math.random() * amountQuotes.value);
+  while (newQuoteIndex === lastQuoteIndex.value) {
+    newQuoteIndex = Math.floor(Math.random() * amountQuotes.value);
+  }
+  currentQuoteIndex.value = newQuoteIndex;
+  lastQuoteIndex.value = currentQuoteIndex.value;
   quote.value = quotes.quotes[currentQuoteIndex.value];
   show.value = true;
-}, 4500);
+}, 6000);
 </script>
 
 <style scoped>
