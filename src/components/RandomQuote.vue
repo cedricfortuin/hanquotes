@@ -3,7 +3,9 @@
     <i class="text-gray-200 text-2xl">"{{ quote }}"</i>
   </Transition>
   <br/>
-  <small class="text-gray-200">Quote {{ currentQuoteIndex + 1 }} out of {{ amountQuotes }}</small>
+  <small class="text-gray-200">Quote {{ currentQuoteIndex + 1 }} van de {{ amountQuotes }} | <a
+      href="https://github.com/cedricfortuin/hanquotes" target="_blank" class="hover:text-green-500">Nieuwe
+    toevoegen</a></small>
 </template>
 
 <script setup>
@@ -28,6 +30,7 @@ setInterval(() => {
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
 }
+
 .fade-enter, .fade-leave-to {
   opacity: 0;
 }

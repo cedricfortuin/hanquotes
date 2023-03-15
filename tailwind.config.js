@@ -8,8 +8,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'han': '#e5005b'
+      },
       fontFamily: {
-        'sans': ['Roboto', ...defaultTheme.fontFamily.sans]
+        'sans': ['Avenir', ...defaultTheme.fontFamily.sans]
       }
     },
   },
