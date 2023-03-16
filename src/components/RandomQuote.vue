@@ -5,7 +5,7 @@
   <br/>
   <small class="text-gray-200">Quote {{ currentQuoteIndex + 1 }} van de {{ amountQuotes }} | <a
       href="https://github.com/cedricfortuin/hanquotes" target="_blank" class="hover:text-green-500">Nieuwe
-    toevoegen</a> | <a :href="'whatsapp://send?text=' + quote" data-action="share/whatsapp/share" target="_blank"
+    toevoegen</a> | <a :href="'whatsapp://send?text=Check this quote @ https://hanquotes.nl: ' + quote" data-action="share/whatsapp/share" target="_blank"
                        class="hover:text-green-500">Deze quote delen</a></small>
 </template>
 
