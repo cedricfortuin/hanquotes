@@ -22,7 +22,7 @@ document.addEventListener('keydown', (event) => {
     } else if (buffer === 'rick' && event.key === 'Enter' ) {
         console.log('RICK ROLLING');
         buffer = '';
-        const randomTime = ref(Math.floor(Math.random() * 4000) + 1000);
+        const randomTime = ref(0);
         let playCount = 0;
         const intervalId = setInterval(() => {
             if (playCount === 200) {
