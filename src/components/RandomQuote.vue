@@ -4,7 +4,7 @@
     </Transition>
     <br/>
     <small class="text-gray-200">Quote {{ currentQuoteIndex + 1 }} van de {{ amountQuotes }} |
-        <a href="https://github.com/cedricfortuin/hanquotes/issues" target="_blank" class="hover:text-green-500 cursor-pointer">
+        <a href="https://github.com/cedricfortuin/hanquotes/issues/new/choose" target="_blank" class="hover:text-green-500 cursor-pointer">
             Nieuwe toevoegen
         </a>
         | <a :href="'whatsapp://send?text=Check this quote @ https://hanquotes.nl: ' + quote"
