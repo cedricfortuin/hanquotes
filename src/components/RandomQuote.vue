@@ -4,7 +4,7 @@
     </Transition>
     <br/>
     <small class="text-gray-200">Quote {{ currentQuoteIndex + 1 }} van de {{ amountQuotes }} |
-        <a href="/all-quotes" class="hover:text-green-500 cursor-pointer">
+        <a href="/kaas" class="hover:text-green-500 cursor-pointer">
             Alle quotes
         </a>
         | <a :href="'whatsapp://send?text=Check this quote @ https://hanquotes.nl: ' + quote"
