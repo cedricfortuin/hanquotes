@@ -1,26 +1,92 @@
 {
   "quotes": [
-    "Een hond staat dichter bij een kikker, dan een kikker.",
-    "Als het makkelijk is, dan is het niet moeilijk.",
-    "Er is geen vis.",
-    "Als het niet uit maakt, dan maakt het niet uit.",
-    "Je bent sexy, of je kan bowlen.",
-    "Als jullie iets willen doen, regel het.",
-    "3-1=2*2-1=4",
-    "Het leven is oneerlijk, wen eraan.",
-    "Mooie broek.",
-    "You had me @ \"Hello World\".",
-    "Een goede Bio-Informaticus is een luie Bio-Informaticus.",
-    "Luister nooit altijd naar een docent.",
-    "Oh daar ligt een lijk.",
-    "We zijn allemaal buizen.",
-    "✨meh✨",
-    "Keentje",
-    "De kwal is een plant die wat sneller kan reageren en niet vast zit.",
-    "Alcohol is drugs.",
-    "Haaien zijn heel zout.",
-    "Wij promoten geen alcohol. (Maar het is wel lekker)",
-    "Dan doen we lever in de mixer.",
-    "Hij heeft negatieve ballen."
+    {
+      "quote": "Een hond staat dichter bij een kikker, dan een kikker.",
+      "name": "Rick"
+    },
+    {
+      "quote": "Als het makkelijk is, dan is het niet moeilijk.",
+      "name": "Rick"
+    },
+    {
+      "quote": "Er is geen vis.",
+      "name": "Rick"
+    },
+    {
+      "quote": "Als het niet uit maakt, dan maakt het niet uit.",
+      "name": "Rick"
+    },
+    {
+      "quote": "Je bent sexy, of je kan bowlen.",
+      "name": "Tessa en Iris"
+    },
+    {
+      "quote": "Als jullie iets willen doen, regel het.",
+      "name": "Thijn"
+    },
+    {
+      "quote": "3-1=2*2-1=4",
+      "name": "Cedric"
+    },
+    {
+      "quote": "Het leven is oneerlijk, wen eraan.",
+      "name": "Academiedirecteur HAN Rechten"
+    },
+    {
+      "quote": "Mooie broek.",
+      "name": "Mehmet en Cos"
+    },
+    {
+      "quote": "You had me @ \"Hello World\".",
+      "name": "Martijn vd Pol"
+    },
+    {
+      "quote": "Een goede Bio-Informaticus is een luie Bio-Informaticus.",
+      "name": "Martijn vd Pol"
+    },
+    {
+      "quote": "Luister nooit altijd naar een docent.",
+      "name": "Thijn"
+    },
+    {
+      "quote": "Oh daar ligt een lijk.",
+      "name": "Thijn"
+    },
+    {
+      "quote": "We zijn allemaal buizen.",
+      "name": "Rick"
+    },
+    {
+      "quote": "✨meh✨",
+      "name": "Tessa"
+    },
+    {
+      "quote": "Keentje.",
+      "name": "Rick"
+    },
+    {
+      "quote": "De kwal is een plant die wat sneller kan reageren en niet vast zit.",
+      "name": "Rick"
+    },
+    {
+      "quote": "Alcohol is drugs.",
+      "name": "Rick"
+    },
+    {
+      "quote": "Haaien zijn heel zout.",
+      "name": "Rick"
+    },
+    {
+      "quote": "Wij promoten geen alcohol. (Maar het is wel lekker)",
+      "name": "SV Xtend"
+    },
+    {
+      "quote": "Dan doen we lever in de mixer.",
+      "name": "Rick"
+    },
+    {
+      "quote": "Hij heeft negatieve ballen.",
+      "name": "Rick"
+    }
   ]
 }

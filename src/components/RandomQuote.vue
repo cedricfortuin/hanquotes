@@ -1,11 +1,11 @@
 <template>
     <Transition name="fade" mode="out-in">
-        <i class="text-gray-200 text-2xl">"{{ quote }}"</i>
+        <i class="text-gray-200 text-2xl">"{{ quote.quote }}"</i>
     </Transition>
     <br/>
     <small class="text-gray-200">Quote {{ currentQuoteIndex + 1 }} van de {{ amountQuotes }} |
-        <a href="https://github.com/cedricfortuin/hanquotes/issues/new/choose" target="_blank" class="hover:text-green-500 cursor-pointer">
-            Nieuwe toevoegen
+        <a href="/all-quotes" class="hover:text-green-500 cursor-pointer">
+            Alle quotes
         </a>
         | <a :href="'whatsapp://send?text=Check this quote @ https://hanquotes.nl: ' + quote"
              data-action="share/whatsapp/share" target="_blank"

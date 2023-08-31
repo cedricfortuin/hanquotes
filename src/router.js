@@ -1,6 +1,6 @@
 import {createRouter, createWebHistory} from "vue-router";
 import Index from "@/Pages/Index.vue";
-import AddQuote from "@/components/AddQuote.vue";
+import Quotes from "@/Pages/Quotes.vue";
 
 let router;
 export default router = createRouter({
@@ -12,9 +12,9 @@ export default router = createRouter({
             component: Index
         },
         {
-            path: '/add-quote',
-            name: 'quote',
-            component: AddQuote
+            path: '/all-quotes',
+            name: 'quotes',
+            component: Quotes
         }
     ]
 });
