@@ -7,7 +7,7 @@
     <a @click="kaas" class="hover:text-green-500 cursor-pointer">
       Alle quotes
     </a>
-    | <a :href="'whatsapp://send?text=Check this quote @ https://hanquotes.nl: ' + quote"
+    | <a :href="'whatsapp://send?text=Check this quote @ https://hanquotes.nl: ' + quote.quote"
          data-action="share/whatsapp/share" target="_blank"
          class="hover:text-green-500">Deze quote delen</a></small>
 
