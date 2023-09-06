@@ -10,11 +10,6 @@ export default router = createRouter({
             path: '/',
             name: 'home',
             component: Index
-        },
-        {
-            path: '/kaas',
-            name: 'quotes',
-            component: Quotes
         }
     ]
 });
