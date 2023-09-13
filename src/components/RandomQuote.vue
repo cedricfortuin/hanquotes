@@ -16,7 +16,7 @@
     <hr/>
     <ul>
       <li v-for="quote in quotes.quotes" class="text-white">
-        {{ quote.quote }} | <span class="italic">{{ quote.name }}</span>
+        {{ quote.quote }}
       </li>
     </ul>
   </div>
